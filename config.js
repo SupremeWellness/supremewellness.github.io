@@ -1,6 +1,1 @@
-
-// Configuration file
-const practitionerCredentials = {
-  username: "admin",
-  password: "changeme" // You can change this manually later
-};
+const ADMIN_PASSWORD = "changeme";

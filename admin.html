@@ -1,1 +1,36 @@
-<h2>Practitioner Login (To be linked with secure backend)</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practitioner Login</title>
+  <script src="config.js"></script>
+  <script>
+    function login() {
+      const input = document.getElementById("password").value;
+      if (input === ADMIN_PASSWORD) {
+        document.getElementById("login-box").style.display = "none";
+        document.getElementById("admin-content").style.display = "block";
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+  </script>
+</head>
+<body style="font-family:sans-serif; background:#f9f9f9; padding:20px;">
+  <div id="login-box">
+    <h2>Practitioner Login</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+  </div>
+  <div id="admin-content" style="display:none;">
+    <h2>Client Session Intake</h2>
+    <form>
+      <label>Client Name: <input type="text" /></label><br><br>
+      <label>Session Notes:<br><textarea rows="6" cols="50"></textarea></label><br><br>
+      <label>Recommendations:<br><textarea rows="4" cols="50"></textarea></label><br><br>
+      <button type="submit">Save</button>
+    </form>
+    <p>Send manually or connect this form to a Google Sheet for storage.</p>
+  </div>
+</body>
+</html>
