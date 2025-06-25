@@ -1,283 +1,119 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Supreme Wellness</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f9; }
-    header { background-color: #3d3d3d; color: white; padding: 20px; text-align: center; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fffdf7;
+      color: #222;
+    }
+    header img {
+      width: 100%;
+      display: block;
+    }
     nav {
-      background-color: #222;
-      display: flex; justify-content: space-between; padding: 10px 20px;
+      background: #000;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 15px;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    .content { padding: 20px; }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .product-card {
+      background: white;
+      margin: 20px auto;
+      max-width: 700px;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .buy-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 16px;
+      background: #000;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
     footer {
-      background: #222; color: #fff; text-align: center; padding: 20px;
+      background: #eee;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Supreme Wellness Logo">
+  </header>
+  <nav>
+    <a href="#cleanse">Cleanse Kit</a>
+    <a href="#fibroid">Fibroid Cleanse</a>
+    <a href="public_intake_form.html">Intake Form</a>
+    <a href="admin_login.html">Practitioner Login</a>
+    <a href="testimonial_form.html">Testimonials</a>
+  </nav>
 
-<header>
-  <h1>🌿 Supreme Wellness</h1>
-  <p>Your Journey to Vibrant Health Starts Here</p>
-</header>
+  <section class="section">
+    <h1>"Supreme Wellness exists to cleanse, restore, and elevate the health of our people through ancient herbal wisdom and modern healing."</h1>
+  </section>
 
-<nav>
-  <div>
-    <a href="index.html">🏠 Home</a>
-    <a href="Supreme_Wellness_Intake_Form.html">📋 Client Intake</a>
-    <a href="admin.html">🔐 Practitioner Login</a>
-  </div>
-</nav>
+  <section id="cleanse" class="section">
+    <div class="product-card">
+      <h2>🧴 Supreme Cleanse Kit</h2>
+      <img src="cleanse.png" alt="Cleanse Kit">
+      <p>Includes CODO, Good Blood, Parasite Eliminator, Cell Protector.</p>
+      <img src="instructions.png" alt="Instructions">
+      <div class="buy-buttons">
+        <a href="https://paypal.me/supremewellness">Buy via PayPal</a>
+        <a href="https://cash.app/$SupremeWellness">Buy via Cash App</a>
+      </div>
+    </div>
+  </section>
 
-<div class="content">
-  <h2>✨ Our Products</h2>
-  
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>CODO</h3>
-        <p>Clean out colon, liver, kidneys, spleen</p>
-        <p><strong>Price:</strong> $45</p>
-        <button onclick="alert('Redirecting to PayPal for CODO')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $45 to $SupremeWellness')">Pay with Cash App</button>
+  <section id="fibroid" class="section">
+    <div class="product-card">
+      <h2>🌺 Supreme Fibroid Cleanse</h2>
+      <img src="fibroid.png" alt="Fibroid Cleanse">
+      <p>Supports fibroid reduction and womb health.</p>
+      <div class="buy-buttons">
+        <a href="https://paypal.me/supremewellness">Buy via PayPal</a>
+        <a href="https://cash.app/$SupremeWellness">Buy via Cash App</a>
+      </div>
     </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Cell Protector</h3>
-        <p>Cleans cells, antiviral, antimalarial</p>
-        <p><strong>Price:</strong> $45</p>
-        <button onclick="alert('Redirecting to PayPal for Cell Protector')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $45 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>PSA</h3>
-        <p>Parasite annihilation, anti-worm, antiviral</p>
-        <p><strong>Price:</strong> $45</p>
-        <button onclick="alert('Redirecting to PayPal for PSA')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $45 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Good Blood</h3>
-        <p>Blood/lymph cleanse, BP regulation, detox</p>
-        <p><strong>Price:</strong> $45</p>
-        <button onclick="alert('Redirecting to PayPal for Good Blood')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $45 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Like a Champ</h3>
-        <p>Male enhancement, stamina, fertility</p>
-        <p><strong>Price:</strong> $45</p>
-        <button onclick="alert('Redirecting to PayPal for Like a Champ')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $45 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Super Focus</h3>
-        <p>Nootropic, focus, oxygen to brain</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for Super Focus')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Diabetes Formula 1</h3>
-        <p>Reduces sugar, balances glucose</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for Diabetes Formula 1')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Diabetes Formula 2</h3>
-        <p>Adaptogenic, ATP and insulin support</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for Diabetes Formula 2')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Hydrangea Colon</h3>
-        <p>Kidney/gallstone detox (powdered)</p>
-        <p><strong>Price:</strong> $10</p>
-        <button onclick="alert('Redirecting to PayPal for Hydrangea Colon')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $10 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Prostate Formula</h3>
-        <p>Supports prostate and reduces inflammation</p>
-        <p><strong>Price:</strong> $30</p>
-        <button onclick="alert('Redirecting to PayPal for Prostate Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $30 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Pee Well</h3>
-        <p>Diuretic, weight reduction (fluid retention)</p>
-        <p><strong>Price:</strong> $40</p>
-        <button onclick="alert('Redirecting to PayPal for Pee Well')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $40 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Never Skip A Beat (MOYO)</h3>
-        <p>Heart health, irregularity, palpitations</p>
-        <p><strong>Price:</strong> $40</p>
-        <button onclick="alert('Redirecting to PayPal for Never Skip A Beat (MOYO)')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $40 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Long Life Formula</h3>
-        <p>Longevity, anti-aging, ATP, eyesight</p>
-        <p><strong>Price:</strong> $65</p>
-        <button onclick="alert('Redirecting to PayPal for Long Life Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $65 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Butterfly Pea Tea</h3>
-        <p>Pineal gland detox, sleep, hair/skin health</p>
-        <p><strong>Price:</strong> $10</p>
-        <button onclick="alert('Redirecting to PayPal for Butterfly Pea Tea')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $10 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Supreme Cleanse Set</h3>
-        <p>CODO + Cell Protector + PSA + Good Blood + Hydrangea</p>
-        <p><strong>Price:</strong> $125</p>
-        <button onclick="alert('Redirecting to PayPal for Supreme Cleanse Set')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $125 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Like a Fox</h3>
-        <p>Female sexual enhancement</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for Like a Fox')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Sinus Formula</h3>
-        <p>For general sinus issues</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for Sinus Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Eradicator Formula</h3>
-        <p>Fluid retention + STDs</p>
-        <p><strong>Price:</strong> $50</p>
-        <button onclick="alert('Redirecting to PayPal for Eradicator Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $50 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Nettle/Anise Hyssop Tea</h3>
-        <p>Tea for immunity/respiratory</p>
-        <p><strong>Price:</strong> $5</p>
-        <button onclick="alert('Redirecting to PayPal for Nettle/Anise Hyssop Tea')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $5 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Blood Purifier Tea</h3>
-        <p>Tea for blood cleansing</p>
-        <p><strong>Price:</strong> $7</p>
-        <button onclick="alert('Redirecting to PayPal for Blood Purifier Tea')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $7 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Lung Power Formula</h3>
-        <p>Mucus/lung support</p>
-        <p><strong>Price:</strong> $30</p>
-        <button onclick="alert('Redirecting to PayPal for Lung Power Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $30 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Thyroid Formula</h3>
-        <p>Iodine-rich, thyroid support</p>
-        <p><strong>Price:</strong> $30</p>
-        <button onclick="alert('Redirecting to PayPal for Thyroid Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $30 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>KRST Consciousness Formula</h3>
-        <p>Frankincense, myrrh, pineal, cancer, pain relief</p>
-        <p><strong>Price:</strong> $65</p>
-        <button onclick="alert('Redirecting to PayPal for KRST Consciousness Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $65 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Energy Formula</h3>
-        <p>General energy boost</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for Energy Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Hyssop Tea</h3>
-        <p>Respiratory, biblical herb</p>
-        <p><strong>Price:</strong> $5</p>
-        <button onclick="alert('Redirecting to PayPal for Hyssop Tea')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $5 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Eye Formula</h3>
-        <p>Vision and eye health</p>
-        <p><strong>Price:</strong> $30</p>
-        <button onclick="alert('Redirecting to PayPal for Eye Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $30 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Neemeric</h3>
-        <p>Turmeric + Neem</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for Neemeric')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>CR-AID</h3>
-        <p>Moringa, black seed, olive leaf, astragalus</p>
-        <p><strong>Price:</strong> $35</p>
-        <button onclick="alert('Redirecting to PayPal for CR-AID')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $35 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-    <div style='border:1px solid #ccc; padding:15px; border-radius:10px; margin-bottom:20px; background:white;'>
-        <h3>Nutritive Formula</h3>
-        <p>Hair, nails, skin, eyes, teeth</p>
-        <p><strong>Price:</strong> $50</p>
-        <button onclick="alert('Redirecting to PayPal for Nutritive Formula')">Buy with PayPal</button>
-        <button onclick="alert('Use Cash App to pay $50 to $SupremeWellness')">Pay with Cash App</button>
-    </div>
-    
-</div>
+  </section>
 
-<footer>
-  <p>Contact: supremewellness79@gmail.com | 📞 (337) 290-5542</p>
-</footer>
+  <section class="section">
+    <h2>💬 Customer Testimonials</h2>
+    <p><em>“This cleanse changed my life!”</em></p>
+    <p><em>“Supreme Wellness is powerful and pure.”</em></p>
+  </section>
 
+  <footer>
+    &copy; 2025 Supreme Wellness. All rights reserved.
+  </footer>
 </body>
 </html>
