@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Practitioner Login</title>
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      if (input === "changeme") {
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Incorrect password");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Practitioner Login</h1>
+  <input type="password" id="password" placeholder="Enter Password">
+  <button onclick="checkPassword()">Login</button>
+</body>
+</html>
